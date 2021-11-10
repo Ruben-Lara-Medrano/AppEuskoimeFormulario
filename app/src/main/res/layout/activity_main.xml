@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="222dp"
+        android:layout_height="180dp"
+        app:layout_constraintBottom_toTopOf="@+id/IdEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_homsa3" />
+
+    <EditText
+        android:id="@+id/IdEmail"
+        android:layout_width="207dp"
+        android:layout_height="35dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_persona_perfil"
+        android:ems="10"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:textColor="#fff"
+        android:textColorHint="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/IdPass"
+        android:layout_width="202dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="48dp"
+        android:background="#11000000"
+        android:drawableLeft="@drawable/ic_candado"
+        android:ems="10"
+        android:hint="pass"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/IdEmail"
+        app:layout_constraintVertical_bias="0.136" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/inicarsesion"
+        android:layout_width="270dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="91dp"
+
+        app:cardBackgroundColor="@color/teal_200"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/IdPass">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="185dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+
+                android:gravity="center"
+                android:text="iniciarsesion"
+                android:textColor="#fff"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inicarsesion">
+
+        <LinearLayout
+            android:layout_width="10dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:orientation="vertical"></LinearLayout>
+
+        <CheckBox
+            android:id="@+id/IdRecordar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Recuerdame" />
+
+        <LinearLayout
+            android:layout_width="67dp"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:orientation="vertical"></LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

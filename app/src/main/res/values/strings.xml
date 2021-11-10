@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AppEuskoimeFormulario</string>
+    <string name="fecha">Introduce una fecha</string>
+    <string name="camposNoVacios">Los campos cliente, obra y descripcion deben estar rellenos.</string>
+    <string name="validacionCliente">El cliente no puede tener mas de 40 caracteres</string>
+    <string name="validacionObra">El campo de obra no puede tener mas de 40 caracteres</string>
+    <string name="validacionDescripcion">El campo de descripcion no puede tener mas de 500 caracteres</string>
+    <string name="materialesVacios">Al menos se debe introducir un material.</string>
+
+    <string name="materiales1">El campo numero 1 y/o materiales 1 son demasiado grandes.</string>
+    <string name="materiales2">El campo numero 2 y/o materiales 2 son demasiado grandes.</string>
+    <string name="materiales3">El campo numero 3 y/o materiales 3 son demasiado grandes.</string>
+    <string name="materiales4">El campo numero 4 y/o materiales 4 son demasiado grandes.</string>
+    <string name="materiales5">El campo numero 5 y/o materiales 5 son demasiado grandes.</string>
+    <string name="materiales6">El campo numero 6 y/o materiales 6 son demasiado grandes.</string>
+    <string name="materiales7">El campo numero 7 y/o materiales 7 son demasiado grandes.</string>
+    <string name="materiales8">El campo numero 8 y/o materiales 8 son demasiado grandes.</string>
+    <string name="materiales9">El campo numero 9 y/o materiales 9 son demasiado grandes.</string>
+
+</resources>
