@@ -15,4 +15,5 @@ public class MainActivity extends AppCompatActivity {
         correo = findViewById(R.id.IdEmail);
         pass = findViewById(R.id.IdPass);
     }
+    //TODO: Crear bd firebase, para el login despues con los usuarios creados retornarlos en la ultima parte del form. Y crear funcion de crear pdf. (revisar login)
 }
