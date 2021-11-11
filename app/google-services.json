@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "376947420955",
+    "project_id": "appeuskoimeformulario",
+    "storage_bucket": "appeuskoimeformulario.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:376947420955:android:34391dff0ac087f6a1edbe",
+        "android_client_info": {
+          "package_name": "com.example.appeuskoimeformulario"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "376947420955-i2fnve8bk640a9rpqggsvocafvk7p5oe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD325bVu28bu--R8j13umYF_1VL_j1Nncg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "376947420955-i2fnve8bk640a9rpqggsvocafvk7p5oe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
