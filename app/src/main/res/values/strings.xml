@@ -16,5 +16,6 @@
     <string name="materiales7">El campo numero 7 y/o materiales 7 son demasiado grandes.</string>
     <string name="materiales8">El campo numero 8 y/o materiales 8 son demasiado grandes.</string>
     <string name="materiales9">El campo numero 9 y/o materiales 9 son demasiado grandes.</string>
-
+    <string name="inicioSesionCorrecto">Inicio de sesion correcto.</string>
+    <string name="falloAutenticaion">Fallo en la autenticacion. Vuelva a intentarlo.</string>
 </resources>
