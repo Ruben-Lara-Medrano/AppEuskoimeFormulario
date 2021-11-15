@@ -43,6 +43,20 @@ public class formulario extends AppCompatActivity {
         String mAuth = FirebaseAuth.getInstance().getUid();
         titleText = findViewById(R.id.signup_title_text);
         slideText = findViewById(R.id.signup_slide_text);
+
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                logout();
+            }
+        });
+    }
+
+    public void logout()
+    {
+        FirebaseAuth.getInstance().signOut();
+        Intent logout  = new Intent(this, MainActivity.class);
+        startActivity(logout);
     }
     public void llamadaAlaSegundoFormulario(View view) {
 

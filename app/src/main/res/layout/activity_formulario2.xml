@@ -81,7 +81,8 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:hint="Cantidad"
-                        android:inputType="number" />
+                        android:inputType="number"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                     <EditText
                         android:id="@+id/M1"
@@ -144,7 +145,8 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:text="Materiales" />
+                        android:text="Materiales"
+                        tools:ignore="TouchTargetSizeCheck" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -160,7 +162,8 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="Cantidad"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <EditText
                     android:id="@+id/M4"
@@ -189,7 +192,8 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:hint="Cantidad"
-                        android:inputType="number" />
+                        android:inputType="number"
+                        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
                     <EditText
                         android:id="@+id/M5"
@@ -214,7 +218,8 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="Cantidad"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
                 <EditText
                     android:id="@+id/M6"
@@ -243,7 +248,8 @@
                         android:layout_weight="1"
                         android:ems="10"
                         android:hint="Cantidad"
-                        android:inputType="number" />
+                        android:inputType="number"
+                        tools:ignore="TouchTargetSizeCheck" />
 
                     <EditText
                         android:id="@+id/M7"
@@ -268,7 +274,8 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="Cantidad"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
                 <EditText
                     android:id="@+id/M8"
@@ -292,7 +299,8 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="Cantidad"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <EditText
                     android:id="@+id/M9"
@@ -301,7 +309,8 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Materiales" />
+                    android:text="Materiales"
+                    tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
         </LinearLayout>
 
