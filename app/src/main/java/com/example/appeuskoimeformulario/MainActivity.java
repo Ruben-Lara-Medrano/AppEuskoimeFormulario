@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         correo = findViewById(R.id.IdEmail);
         pass = findViewById(R.id.IdPass);
+        mAuth= FirebaseAuth.getInstance();
         String idFirebase = mAuth.getUid();
 
         if(idFirebase!=null){

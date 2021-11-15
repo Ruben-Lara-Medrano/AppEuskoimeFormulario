@@ -21,7 +21,7 @@
     <EditText
         android:id="@+id/IdEmail"
         android:layout_width="207dp"
-        android:layout_height="35dp"
+        android:layout_height="48dp"
         android:background="#11000000"
         android:drawableLeft="@drawable/ic_persona_perfil"
         android:ems="10"
@@ -38,7 +38,7 @@
     <EditText
         android:id="@+id/IdPass"
         android:layout_width="202dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="48dp"
         android:background="#11000000"
         android:drawableLeft="@drawable/ic_candado"
@@ -74,10 +74,11 @@
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="185dp"
-                android:layout_height="45dp"
-                android:layout_centerInParent="true"
+                android:layout_height="48dp"
 
+                android:layout_centerInParent="true"
                 android:gravity="center"
+                android:onClick="iniciarSesion"
                 android:text="iniciarsesion"
                 android:textColor="#fff"
                 android:textSize="24sp" />
