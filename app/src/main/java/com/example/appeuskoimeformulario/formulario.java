@@ -3,7 +3,6 @@ package com.example.appeuskoimeformulario;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ActivityOptions;
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Pair;
@@ -15,7 +14,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
 
 
@@ -23,7 +21,7 @@ public class formulario extends AppCompatActivity {
     DatePicker datePicker;
     ImageView backBtn;
     Button next;
-    private FirebaseAuth mAuth;
+    //private FirebaseAuth mAuth;
     TextView titleText, slideText;
     EditText cliente, obra, domicilio, poblacion, Descripcion;
     @Override
@@ -40,16 +38,11 @@ public class formulario extends AppCompatActivity {
         //variables para animacion "marcha atras" entre otros.
         backBtn = findViewById(R.id.signup_back_button);
         next = findViewById(R.id.signup_next_button);
-        String mAuth = FirebaseAuth.getInstance().getUid();
+        //String mAuth = FirebaseAuth.getInstance().getUid();
         titleText = findViewById(R.id.signup_title_text);
         slideText = findViewById(R.id.signup_slide_text);
 
-        backBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                logout();
-            }
-        });
+        backBtn.setOnClickListener(view -> logout());
     }
 
     public void logout()
