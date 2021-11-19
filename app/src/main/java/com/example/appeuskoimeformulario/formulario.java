@@ -12,6 +12,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.example.appeuskoimeformulario.pojos.formparte1;
 
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
@@ -43,6 +44,14 @@ public class formulario extends AppCompatActivity {
         slideText = findViewById(R.id.signup_slide_text);
 
         backBtn.setOnClickListener(view -> logout());
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                llamadaAlaSegundoFormulario(view);
+            }
+        });
+
     }
 
     public void logout()
@@ -51,6 +60,7 @@ public class formulario extends AppCompatActivity {
         Intent logout  = new Intent(this, MainActivity.class);
         startActivity(logout);
     }
+
     public void llamadaAlaSegundoFormulario(View view) {
 
         if(cliente.getText().toString().equals("")|| obra.getText().toString().equals("")|| Descripcion.getText().toString().equals("")){
@@ -75,11 +85,20 @@ public class formulario extends AppCompatActivity {
         }
         else{
             //cogemos los datos dentro de las variables
-            String _cliente = cliente.getText().toString().trim();
+
+            formparte1 form1 = new formparte1("cliente","obra","domicilio","poblacion","Descripcion");
+
+            form1.setCliente(cliente.getText().toString().trim());
+            form1.setObra(obra.getText().toString().trim());
+            form1.setDomicilio(domicilio.getText().toString().trim());
+            form1.setPoblaion(poblacion.getText().toString().trim());
+            form1.setDescripcion(Descripcion.getText().toString().trim());
+
+           /** String _cliente = cliente.getText().toString().trim();
             String _obra = obra.getText().toString().trim();
             String _domicilio = domicilio.getText().toString().trim();
             String _poblacion = poblacion.getText().toString().trim();
-            String _Descripcion = Descripcion.getText().toString().trim();
+            String _Descripcion = Descripcion.getText().toString().trim();*/
 
             //cogemos los datos del datepicker para la fecha
             int day = datePicker.getDayOfMonth();
@@ -89,12 +108,15 @@ public class formulario extends AppCompatActivity {
             //Preparamos el intent
             Intent intent = new Intent(getApplicationContext(), formulario2.class);
             //pasamos las variables de esta activity a la siguiente
-            intent.putExtra("cliente", _cliente);
+
+            intent.putExtra("formParte1", String.valueOf(form1));
+            startActivity(intent);
+          /*  intent.putExtra("cliente", _cliente);
             intent.putExtra("obra", _obra);
             intent.putExtra("domicilio", _domicilio);
             intent.putExtra("poblacion", _poblacion);
             intent.putExtra("descripcion", _Descripcion);
-            intent.putExtra("date", _fecha);
+            intent.putExtra("date", _fecha); */
 
             //cargamos los botones para volver atras las transiciones de titulos y demas
             Pair[] pairs = new Pair[5];
