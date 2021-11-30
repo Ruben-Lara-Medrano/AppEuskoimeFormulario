@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import com.example.appeuskoimeformulario.conexion.connection;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         pass = findViewById(R.id.IdPass);
         mAuth= FirebaseAuth.getInstance();
         String idFirebase = mAuth.getUid();
-
+        connection db = new connection();
         if(idFirebase!=null){
             Intent i = new Intent(getApplicationContext(), formulario.class);
             startActivity(i);
